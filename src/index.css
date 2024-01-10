@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply m-0 p-0 bg-slate-900 text-white;
+  }
+
+  .app {
+    @apply max-w-[700px] my-0 mx-auto h-screen flex flex-col justify-center items-center;
+  }
+
+  .settings {
+    @apply flex text-center w-full justify-around;
+  }
+
+  button {
+    @apply m-5 py-3 px-5 border-none rounded bg-zinc-800 text-slate-400 cursor-pointer transition;
+  }
+
+  button:active {
+    @apply scale-90;
+  }
+
+  h4 {
+    @apply text-xl mt-5;
+  }
+
+  span {
+    @apply text-2xl;
+  }
+
+  .display {
+    @apply text-center mt-5;
+  }
+}
